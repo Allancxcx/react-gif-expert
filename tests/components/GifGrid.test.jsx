@@ -9,7 +9,7 @@ describe('Pruebas en <GifGrid/>', () => {
 
     test('debe mostrar el loading inicialmente', () => { 
 
-        useFetchGifs.jest.mock({
+        useFetchGifs.mockReturnValue({
          images:[],
             isLoading:false 
         });
